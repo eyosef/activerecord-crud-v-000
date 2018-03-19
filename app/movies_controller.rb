@@ -26,9 +26,8 @@ end
 
 def can_be_created_in_a_block(args = {})
   Movie.create do |m|
-    m.title
+    m.title = "The Room"
     m.release_date
-
     #TO DO
   end
 end
