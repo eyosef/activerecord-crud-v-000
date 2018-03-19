@@ -49,7 +49,6 @@ def can_find_by_multiple_attributes
   # release_date == 2000
   # director == "Me"
   Movie.find_by(title: 'Title', release_date: 2000, director: 'Me')
-user = User.find_by(name: 'David')
   #TO DO
 
 end
