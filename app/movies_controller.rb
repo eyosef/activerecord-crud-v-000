@@ -25,7 +25,6 @@ def can_be_created_with_a_hash_of_attributes
 end
 
 def can_be_created_in_a_block(args = {})
-  binding.pry
   Movie.create do |m|
     m.title = args[:title] unless args[:title] == nil
     m.release_date = args[:release_date] unless args[:release_date] == nil
