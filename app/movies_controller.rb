@@ -23,6 +23,7 @@ def can_be_created_with_a_hash_of_attributes
 end
 
 def can_be_created_in_a_block(args = {})
+  binding.pry
   Movie.create do |m|
     #TO DO
   end
@@ -49,7 +50,6 @@ def can_find_by_multiple_attributes
   # release_date == 2000
   # director == "Me"
   Movie.find_by(title: 'Title', release_date: 2000, director: 'Me')
-
 
 end
 
